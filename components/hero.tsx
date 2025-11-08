@@ -6,9 +6,8 @@ import { ArrowRight, Sparkles, ShoppingBag, TrendingUp, Award } from "lucide-rea
 import Link from "next/link"
 
 const floatingStats = [
-  { icon: ShoppingBag, label: "10,000+ Products", color: "bg-green-500" },
-  { icon: TrendingUp, label: "98% Satisfaction", color: "bg-blue-500" },
-  { icon: Award, label: "15+ Years", color: "bg-purple-500" },
+  { icon: ShoppingBag, label: "10,000+ Happy Homes", color: "bg-green-500" },
+  { icon: TrendingUp, label: "4.9/5 Customer Rating", color: "bg-blue-500" },
 ]
 
 export default function Hero() {
@@ -75,7 +74,7 @@ export default function Hero() {
                 >
                   <Sparkles className="w-4 h-4" />
                 </motion.div>
-                Trusted FMCG Partner Since 2025
+                Loved by Families Since 2025
               </motion.span>
             </motion.div>
 
@@ -85,7 +84,7 @@ export default function Hero() {
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight text-balance"
             >
-              Everyday Essentials,{" "}
+              The Brands You Trust,{" "}
               <motion.span
                 className="text-primary inline-block"
                 animate={{
@@ -94,7 +93,7 @@ export default function Hero() {
                 }}
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
               >
-                Delivered with Care
+                Delivered to Your Door
               </motion.span>
             </motion.h1>
 
@@ -104,8 +103,7 @@ export default function Hero() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="text-xl md:text-2xl text-muted-foreground leading-relaxed"
             >
-              Fresh, Safe, and Reliable - Every Single Time. Your one-stop destination for quality FMCG products at
-              competitive prices.
+              From pantry staples to baby care — get fresh, authentic products from your favorite brands, fast and hassle-free.
             </motion.p>
 
             <motion.div
@@ -141,13 +139,13 @@ export default function Hero() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Link href="/products/home-care">
+              <Link href="/shop">
                 <motion.div
                   whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(34, 197, 94, 0.3)" }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <Button size="lg" className="group text-lg px-8 py-6">
-                    Explore Products
+                    Shop Now
                     <motion.div
                       animate={{ x: [0, 5, 0] }}
                       transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
@@ -160,7 +158,7 @@ export default function Hero() {
               <Link href="/contact">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-transparent">
-                    Contact Us
+                    Get in Touch
                   </Button>
                 </motion.div>
               </Link>
@@ -186,8 +184,8 @@ export default function Hero() {
               <motion.img
                 whileHover={{ scale: 1.05, rotate: 1 }}
                 transition={{ duration: 0.3 }}
-                src="/colorful-fmcg-products-display-with-groceries-beve.jpg"
-                alt="FMCG Products"
+                src="/images/hero.jpg"
+                alt="Trusted FMCG products delivered fresh"
                 className="relative w-full h-auto rounded-2xl shadow-2xl border-4 border-white"
               />
             </motion.div>

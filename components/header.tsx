@@ -5,6 +5,7 @@ import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, ChevronDown, Search, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const categories = [
   {
@@ -89,9 +90,9 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <motion.div whileHover={{ scale: 1.05 }} className="text-2xl font-bold text-primary-foreground">
-              NewMart
+          <Link href="/" className="flex text-center items-center gap-2 ">
+            <motion.div whileHover={{ scale: 1.05 }} className="">
+            <Image src="/images/logowhite.png" alt="axis trader logo" height={160} width={160}/>
             </motion.div>
           </Link>
 
@@ -111,7 +112,7 @@ export default function Header() {
             </Link>
 
             {/* Products Dropdown */}
-            <div
+            {/* <div
               className="relative"
               onMouseEnter={() => setActiveDropdown("products")}
               onMouseLeave={() => setActiveDropdown(null)}
@@ -151,7 +152,13 @@ export default function Header() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </div> */}
+            <Link
+              href="/products"
+              className="text-primary-foreground/90 hover:text-primary-foreground transition-colors font-medium"
+            >
+              Products
+            </Link>
 
             <Link
               href="/brands"

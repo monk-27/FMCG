@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
-
+import Image from "next/image"
 const footerLinks = {
   products: {
     title: "Products",
@@ -36,7 +36,10 @@ export default function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <h3 className="text-2xl font-bold mb-4 text-primary-foreground">NewMart</h3>
+              {/* <h3 className="text-2xl font-bold mb-4 text-primary-foreground">Axis Global</h3> */}
+              <motion.div whileHover={{ scale: 1.05 }} className="mb-4">
+                          <Image src="/images/logowhite.png" alt="axis trader logo" height={200} width={200}/>
+                          </motion.div>
               <p className="text-primary-foreground/80 mb-6 leading-relaxed">
                 Your trusted partner for quality FMCG products. Delivering everyday essentials with care and
                 reliability.
@@ -45,7 +48,7 @@ export default function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-primary-foreground/80">
                   <Mail className="w-5 h-5 text-primary-foreground" />
-                  <span>info@newmart.in</span>
+                  <span>info@Axis Global.in</span>
                 </div>
                 <div className="flex items-center gap-3 text-primary-foreground/80">
                   <Phone className="w-5 h-5 text-primary-foreground" />
@@ -93,7 +96,7 @@ export default function Footer() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-primary-foreground/20"
         >
-          <p className="text-primary-foreground/60 text-sm mb-4 md:mb-0">© 2025 NewMart. All rights reserved.</p>
+          <p className="text-primary-foreground/60 text-sm mb-4 md:mb-0">© 2025 Axis Global. All rights reserved.</p>
 
           <div className="flex items-center gap-4">
             {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (

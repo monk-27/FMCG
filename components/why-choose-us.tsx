@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance">
-            Why Choose NewMart?
+            Why Choose Axis Global?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             We focus on delivering quality products at competitive prices with efficient service and trusted global
@@ -86,10 +86,10 @@ export default function WhyChooseUs() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary opacity-90" />
           <div className="relative z-10">
             <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-4 text-balance">
-              Growing Together with NewMart
+              Growing Together with Axis Global
             </h3>
             <p className="text-primary-foreground/90 max-w-3xl mx-auto mb-6 leading-relaxed">
-              Our policy at NewMart centers on developing enduring alliances between our clients. The company
+              Our policy at Axis Global centers on developing enduring alliances between our clients. The company
               facilitates global expansion for producers and suppliers through efficient trade solutions that connect
               them to worldwide markets.
             </p>

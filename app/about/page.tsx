@@ -99,7 +99,7 @@ export default function AboutPage() {
                 whileHover={{ scale: 1.05 }}
                 className="inline-block px-6 py-3 bg-primary/10 text-primary rounded-full text-sm font-semibold"
               >
-                About NewMart
+                About Axis Global
               </motion.span>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}

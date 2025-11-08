@@ -14,7 +14,7 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: "NewMart - Quality FMCG Products Delivered",
+  title: "Axis Global Traders - Quality FMCG Products Delivered",
   description: "Your trusted partner for everyday essentials. Quality FMCG products delivered with care.",
   generator: "v0.app",
 }

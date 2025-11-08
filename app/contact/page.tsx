@@ -26,7 +26,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    details: ["info@newmart.com", "support@newmart.com", "sales@newmart.com"],
+    details: ["info@Axis Global.com", "support@Axis Global.com", "sales@Axis Global.com"],
     color: "from-purple-500/10 to-purple-600/10",
     iconBg: "bg-purple-500/10",
     iconColor: "text-purple-600",
