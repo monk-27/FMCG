@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
 import Header from "@/components/header"
+import Footer from "@/components/footer"
 
 
 const manrope = Manrope({
@@ -29,6 +30,8 @@ export default function RootLayout({
       <body className={`font-sans ${manrope.variable} antialiased`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Header />
+              <Footer />
+        
         <Analytics />
       </body>
     </html>

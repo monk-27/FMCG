@@ -145,10 +145,10 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                   >
-                    <Button size="lg" className="group">
+                    {/* <Button size="lg" className="group">
                       <Info className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                       Learn More
-                    </Button>
+                    </Button> */}
                   </motion.div>
                 </div>
               </div>

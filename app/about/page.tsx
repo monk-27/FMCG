@@ -1,13 +1,29 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Award, Users, TrendingUp, Heart, Target, Eye, Zap, Shield, Leaf, Globe, Handshake, Star } from "lucide-react"
+import {
+  Award,
+  Users,
+  TrendingUp,
+  Heart,
+  Target,
+  Eye,
+  Zap,
+  Shield,
+  Leaf,
+  Globe,
+  Handshake,
+  Star,
+  Rocket,
+  Sparkles,
+  Lightbulb,
+  Package,
+} from "lucide-react"
 
 const stats = [
-  { label: "Years of Excellence", value: "15+", icon: Award },
-  { label: "Happy Clients", value: "5000+", icon: Users },
-  { label: "Products Range", value: "10000+", icon: TrendingUp },
-  { label: "Customer Satisfaction", value: "98%", icon: Heart },
+  { label: "Happy Clients", value: "1000+", icon: Users },
+  { label: "Products Range", value: "2,000+", icon: Package },
+{ label: "Customer Satisfaction", value: "98%", icon: Heart },
 ]
 
 const values = [
@@ -15,7 +31,7 @@ const values = [
     icon: Target,
     title: "Our Mission",
     description:
-      "To provide high-quality FMCG products that enhance everyday living while maintaining affordability and accessibility for all.",
+      "To make India’s best FMCG brands accessible to every corner of the world — fast, fresh, and affordable.",
     color: "from-green-500/10 to-green-600/10",
     iconBg: "bg-green-500/10",
     iconColor: "text-green-600",
@@ -24,25 +40,25 @@ const values = [
     icon: Eye,
     title: "Our Vision",
     description:
-      "To become the most trusted FMCG partner, known for reliability, quality, and customer-centric innovation.",
+      "To be the #1 go-to platform for global retailers looking for trusted, high-quality Indian essentials.",
     color: "from-blue-500/10 to-blue-600/10",
     iconBg: "bg-blue-500/10",
     iconColor: "text-blue-600",
   },
   {
     icon: Zap,
-    title: "Innovation",
+    title: "Speed & Agility",
     description:
-      "Continuously evolving our product range and services to meet changing consumer needs and market trends.",
+      "From order to delivery in 10–20 days — powered by smart tech and real-time tracking.",
     color: "from-purple-500/10 to-purple-600/10",
     iconBg: "bg-purple-500/10",
     iconColor: "text-purple-600",
   },
   {
     icon: Shield,
-    title: "Quality Assurance",
+    title: "Quality Obsessed",
     description:
-      "Rigorous quality checks and certifications ensure every product meets the highest safety and quality standards.",
+      "Every product is handpicked, lab-tested, and certified — no compromises, ever.",
     color: "from-orange-500/10 to-orange-600/10",
     iconBg: "bg-orange-500/10",
     iconColor: "text-orange-600",
@@ -50,29 +66,40 @@ const values = [
 ]
 
 const features = [
-  { icon: Leaf, title: "Eco-Friendly", description: "Sustainable packaging solutions" },
-  { icon: Globe, title: "Wide Reach", description: "Pan-India distribution network" },
-  { icon: Handshake, title: "Trusted Partners", description: "Collaboration with top brands" },
-  { icon: Star, title: "Premium Quality", description: "Only the best products" },
+  { icon: Leaf, title: "Eco Packaging", description: "100% recyclable & biodegradable" },
+  // { icon: Globe, title: "12+ Countries", description: "UAE, Kenya, Malaysia & more" },
+  { icon: Handshake, title: "Direct from Factory", description: "Zero middlemen, max value" },
+  { icon: Star, title: "Curated Brands", description: "Only the best make it" },
 ]
 
 const timeline = [
-  { year: "2009", event: "Company Founded", description: "Started with a vision to revolutionize FMCG distribution" },
-  { year: "2012", event: "Expanded Operations", description: "Opened 5 new distribution centers across the region" },
-  { year: "2016", event: "Digital Transformation", description: "Launched online platform and mobile app" },
   {
-    year: "2020",
-    event: "Sustainability Initiative",
-    description: "Committed to eco-friendly packaging and operations",
+    year: "2022",
+    event: "Launched Axis Global",
+    description: "Started with 50 products and a dream to take Indian FMCG global.",
   },
-  { year: "2024", event: "Market Leader", description: "Recognized as top FMCG distributor with 5000+ clients" },
+  {
+    year: "2023",
+    event: "First 100 Orders",
+    description: "Shipped to UAE, Kenya, and Malaysia — all in under 15 days.",
+  },
+  {
+    year: "2024",
+    event: "Tech-Powered Platform",
+    description: "Launched live inventory, instant quotes, and WhatsApp order tracking.",
+  },
+  {
+    year: "2025",
+    event: "1,000+ Shipments",
+    description: "Now live in 12 countries with 2,000+ products and growing fast.",
+  },
 ]
 
 export default function AboutPage() {
   return (
     <div className="pt-20">
+      {/* ────────────────────── HERO ────────────────────── */}
       <section className="relative py-24 md:py-40 overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/5 to-background">
-        {/* Animated background */}
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 180, 0] }}
           transition={{ duration: 30, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
@@ -99,31 +126,33 @@ export default function AboutPage() {
                 whileHover={{ scale: 1.05 }}
                 className="inline-block px-6 py-3 bg-primary/10 text-primary rounded-full text-sm font-semibold"
               >
-                About Axis Global
+                We’re Axis Global
               </motion.span>
+
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
                 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight text-balance"
               >
-                Building Trust Through{" "}
+                India to the World,{" "}
                 <motion.span
                   className="text-primary inline-block"
                   animate={{ scale: [1, 1.05, 1] }}
                   transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
                 >
-                  Quality & Service
+                  One Click Away
                 </motion.span>
               </motion.h1>
+
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
+
                 className="text-xl text-muted-foreground leading-relaxed"
               >
-                For over 15 years, we've been committed to delivering excellence in FMCG products. Our journey is built
-                on trust, quality, and an unwavering dedication to customer satisfaction.
+                A young, hungry startup on a mission to bring India’s best FMCG brands to global shelves — fast, fresh, and hassle-free.
               </motion.p>
 
               <motion.div
@@ -157,6 +186,7 @@ export default function AboutPage() {
               </motion.div>
             </motion.div>
 
+            {/* Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -171,12 +201,11 @@ export default function AboutPage() {
               >
                 <img
                   src="/modern-warehouse-with-fmcg-products.jpg"
-                  alt="About Us"
+                  alt="Axis Global startup warehouse"
                   className="w-full h-auto rounded-3xl shadow-2xl border-8 border-white"
                 />
               </motion.div>
 
-              {/* Floating decorative elements */}
               <motion.div
                 animate={{ y: [0, 30, 0], rotate: [0, 180, 360] }}
                 transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
@@ -192,6 +221,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ────────────────────── STATS ────────────────────── */}
       <section className="py-20 bg-primary relative overflow-hidden">
         <motion.div
           animate={{ x: [-100, 100, -100] }}
@@ -199,7 +229,7 @@ export default function AboutPage() {
           className="absolute top-0 left-0 w-64 h-64 bg-primary-foreground/5 rounded-full blur-3xl"
         />
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -232,6 +262,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ────────────────────── VALUES ────────────────────── */}
       <section className="py-24 md:py-36">
         <div className="container mx-auto px-4">
           <motion.div
@@ -242,17 +273,17 @@ export default function AboutPage() {
           >
             <motion.span
               initial={{ opacity: 0, scale: 0 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              whileInView ={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               className="inline-block px-6 py-3 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-6"
             >
-              What Drives Us
+              What Fuels Us
             </motion.span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-              Our Core Values
+              Built for Speed & Trust
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              The principles that guide everything we do and shape our commitment to excellence
+              We move fast, deliver quality, and keep it real — because your business can’t wait.
             </p>
           </motion.div>
 
@@ -267,7 +298,6 @@ export default function AboutPage() {
                 whileHover={{ y: -12, scale: 1.02 }}
                 className={`bg-gradient-to-br ${value.color} rounded-3xl p-10 border border-border/50 shadow-lg hover:shadow-2xl transition-all relative overflow-hidden`}
               >
-                {/* Decorative background */}
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
@@ -289,6 +319,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ────────────────────── TIMELINE ────────────────────── */}
       <section className="py-24 md:py-36 bg-gradient-to-br from-primary/5 to-background relative overflow-hidden">
         <motion.div
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -296,7 +327,7 @@ export default function AboutPage() {
           className="absolute top-20 right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl"
         />
 
-        <div className="container mx-auto px-4 relative z-10">
+        {/* <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -309,13 +340,13 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="inline-block px-6 py-3 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-6"
             >
-              Our Story
+              Our Journey
             </motion.span>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-              Our Journey
+              From Idea to Impact
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Milestones that shaped our success story and commitment to excellence
+              We started small, moved fast, and never looked back.
             </p>
           </motion.div>
 
@@ -360,7 +391,7 @@ export default function AboutPage() {
               </motion.div>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   )

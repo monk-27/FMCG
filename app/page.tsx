@@ -17,7 +17,7 @@ export default function Home() {
       <Products />
       <WhyChooseUs />
       <Brands />
-      <Newsletter />
+      {/* <Newsletter /> */}
       <Footer />
     </main>
   )

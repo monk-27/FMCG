@@ -97,7 +97,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-16">
             <Link
               href="/"
               className="text-primary-foreground/90 hover:text-primary-foreground transition-colors font-medium"
@@ -160,12 +160,12 @@ export default function Header() {
               Products
             </Link>
 
-            <Link
+            {/* <Link
               href="/brands"
               className="text-primary-foreground/90 hover:text-primary-foreground transition-colors font-medium"
             >
               Brands
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className="text-primary-foreground/90 hover:text-primary-foreground transition-colors font-medium"
@@ -176,20 +176,28 @@ export default function Header() {
 
           {/* Right Actions */}
           <div className="flex items-center gap-4">
-            <Button
+            {/* <Button
               variant="ghost"
               size="icon"
               className="hidden md:flex text-primary-foreground hover:bg-primary-foreground/10"
             >
               <Search className="w-5 h-5" />
-            </Button>
-            <Button
+            </Button> */}
+            {/* <Button
               variant="ghost"
               size="icon"
               className="hidden md:flex text-primary-foreground hover:bg-primary-foreground/10"
             >
               <Phone className="w-5 h-5" />
-            </Button>
+            </Button> */}
+                          <motion.a
+                href="tel:+919810482171"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                              className="hidden md:flex text-primary-foreground hover:bg-primary-foreground/10"
+  >
+                <Phone className="w-5 h-5" />
+              </motion.a>
 
             {/* Mobile Menu Button */}
             <Button

@@ -95,7 +95,8 @@ const categories: Category[] = [
     badge: "Daily Essentials",
     heroImage: "/images/ph.png",
     items: [
-      { name: "Hair care", image: "https://www.mudraglobal.com/wp-content/uploads/2020/09/Hair-care.jpeg" },
+      { name: "Hair care", 
+        image: "https://www.mudraglobal.com/wp-content/uploads/2020/09/Hair-care.jpeg" },
       { name: "Baby Care", image: "https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/09/13/Photos/Processed/johnson-kMk--621x414@LiveMint.jpg" },
       { name: "Oral care", image: "https://wearenordics.com/wp-content/uploads/2021/12/How-Dental-Care-Products-Earned-Their-Spot-In-E-commerce-Of-FMCG-1.png" },
       { name: "Fragrance", image: "https://snackfax.com/wp-content/uploads/2024/11/image-of-fragrances-696x392.jpg" },

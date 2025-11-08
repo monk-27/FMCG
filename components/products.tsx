@@ -5,16 +5,17 @@ import ProductCarousel from "./product-carousel"
 
 const products = [
   {
-    name: "Premium Dish Wash Liquid",
+    name: "Detergent & Fabric Care",
     category: "Home Care",
-    description: "Powerful cleaning formula for sparkling dishes",
-    image: "/dish-wash-liquid-bottle-green.jpg",
+    description: "Powerful cleaning formula for your loved clothes.",
+    image: "/images/home7.jpg",
   },
   {
     name: "Organic Hair Shampoo",
     category: "Personal Care",
     description: "Natural ingredients for healthy, shiny hair",
-    image: "/shampoo-bottle-natural-organic.jpg",
+            image: "https://www.mudraglobal.com/wp-content/uploads/2020/09/Hair-care.jpeg" 
+
   },
   {
     name: "Whole Wheat Pasta",
@@ -26,7 +27,7 @@ const products = [
     name: "Fresh Orange Juice",
     category: "Beverages",
     description: "Pure, fresh-squeezed orange goodness",
-    image: "/orange-juice-bottle-fresh.jpg",
+    image: "https://5.imimg.com/data5/SELLER/Default/2023/1/QF/BL/FT/163771626/cold-drinks-supplier.jpg",
   },
   {
     name: "Laundry Detergent",

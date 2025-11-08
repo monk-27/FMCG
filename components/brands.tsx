@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 
-const brands = ["Dettol", "Sunsilk", "Ponds", "Lakmé", "Durex", "Lifebuoy", "Harpic", "Lizol"]
+const brands = ["Dish Washers", "Cosmetic", "Spices", "Carbonated Drinks", "First Aid Kit", "Lifebuoy", "Harpic", "Lizol"]
 
 export default function Brands() {
   return (
