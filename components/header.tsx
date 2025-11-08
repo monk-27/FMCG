@@ -234,46 +234,14 @@ export default function Header() {
                   About Us
                 </Link>
 
-                {categories.map((category) => (
-                  <div key={category.name} className="space-y-2">
-                    <button
-                      onClick={() => setActiveDropdown(activeDropdown === category.name ? null : category.name)}
-                      className="flex items-center justify-between w-full py-2 text-primary-foreground/90 hover:text-primary-foreground transition-colors font-medium"
-                    >
-                      {category.name}
-                      <ChevronDown
-                        className={`w-4 h-4 transition-transform ${activeDropdown === category.name ? "rotate-180" : ""}`}
-                      />
-                    </button>
-                    <AnimatePresence>
-                      {activeDropdown === category.name && (
-                        <motion.div
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: "auto" }}
-                          exit={{ opacity: 0, height: 0 }}
-                          className="pl-4 space-y-2"
-                        >
-                          {category.sublinks.map((sublink) => (
-                            <Link
-                              key={sublink}
-                              href={`/products/${category.name.toLowerCase().replace(" ", "-")}/${sublink.toLowerCase().replace(" ", "-")}`}
-                              className="block py-1 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                            >
-                              {sublink}
-                            </Link>
-                          ))}
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                ))}
-
                 <Link
-                  href="/brands"
-                  className="block py-2 text-primary-foreground/90 hover:text-primary-foreground transition-colors font-medium"
-                >
-                  Brands
-                </Link>
+              href="/products"
+              className="block py-2 text-primary-foreground/90 hover:text-primary-foreground transition-colors font-medium"
+ >
+              Products
+            </Link>
+
+                
                 <Link
                   href="/contact"
                   className="block py-2 text-primary-foreground/90 hover:text-primary-foreground transition-colors font-medium"
